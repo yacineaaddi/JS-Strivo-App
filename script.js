@@ -110,13 +110,13 @@ class App {
 
   _newWorkout(e) {
     e.preventDefault();
-    //Clear Input Fields
-    inputDistance.value =
-      inputDuration.value =
-      inputCadence.value =
-      inputElevation.value =
-        '';
-    //Display Marker
+
+    // Get data from form
+    // Check if data is valid
+    // If workout running, create running object
+    // if workout cycling, create cycling object
+    // Add new object to workout array
+    // Render workout on map as marker
     const { lat, lng } = this.#mapEvent.latlng;
 
     L.marker([lat, lng])
@@ -131,6 +131,13 @@ class App {
         })
       )
       .openPopup();
+
+    //Clear Input Fields
+    inputDistance.value =
+      inputDuration.value =
+      inputCadence.value =
+      inputElevation.value =
+        '';
   }
 }
 
