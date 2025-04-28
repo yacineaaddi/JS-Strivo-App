@@ -7,6 +7,7 @@ const inputDistance = document.querySelector('.form__input--distance');
 const inputDuration = document.querySelector('.form__input--duration');
 const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
+const resetButton = document.querySelector('.Resbutton');
 
 class Workout {
   date = new Date();
@@ -287,11 +288,11 @@ class App {
       this._renderWorkout(work);
     });
   }
-
-  reset() {
-    localStorage.removeItem('workouts');
-    location.reload();
-  }
 }
+
+resetButton.addEventListener('click', function () {
+  localStorage.removeItem('workouts');
+  location.reload();
+});
 
 const app = new App();
