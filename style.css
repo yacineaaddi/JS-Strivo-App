@@ -31,7 +31,6 @@ body {
   display: flex;
 }
 
-
 a:link,
 a:visited {
   color: var(--color-brand--1);
@@ -43,6 +42,7 @@ a:visited {
   padding: 3rem 5rem 4rem 5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .logo {
@@ -72,10 +72,10 @@ a:visited {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0.75rem 1.5rem;
 }
-.workout--running {
+.workout--Running {
   border-left: 5px solid var(--color-brand--2);
 }
-.workout--cycling {
+.workout--Cycling {
   border-left: 5px solid var(--color-brand--1);
 }
 
@@ -163,12 +163,14 @@ a:visited {
   display: none;
 }
 
-.copyright {
+.ResButton {
   margin-top: auto;
   font-size: 1.3rem;
   text-align: center;
   color: var(--color-light--1);
+  width: 100px; height: 100px; border: 2px solid red;
 }
+
 
 .twitter-link:link,
 .twitter-link:visited {
@@ -202,9 +204,10 @@ a:visited {
   background-color: var(--color-dark--1);
 }
 
-.running-popup .leaflet-popup-content-wrapper {
+.Running-popup .leaflet-popup-content-wrapper {
   border-left: 5px solid var(--color-brand--2);
 }
-.cycling-popup .leaflet-popup-content-wrapper {
+.Cycling-popup .leaflet-popup-content-wrapper {
   border-left: 5px solid var(--color-brand--1);
 }
+
