@@ -20,7 +20,6 @@ class Workout {
   }
 
   _setDescription() {
-    //prettier-ignore
     const months = [
       'January',
       'February',
@@ -103,7 +102,6 @@ class App {
     const { longitude } = position.coords;
 
     const coords = [latitude, longitude];
-    console.log(this);
     this.#map = L.map('map').setView(coords, this.#mapZoomLevel);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -155,7 +153,6 @@ class App {
     const duration = +inputDuration.value;
     const { lat, lng } = this.#mapEvent.latlng;
     let workout;
-    console.log(type);
     // Check if data is valid
     // If workout running, create running object
     if (type === 'running') {
@@ -181,7 +178,6 @@ class App {
     }
     // Add new object to workout array
     this.#workouts.push(workout);
-    console.log(workout);
     // Render workout on map as marker
     this._renderWorkoutMarker(workout);
     // Render workout on list
@@ -205,30 +201,28 @@ class App {
         })
       )
       .setPopupContent(
-        `${workout.type === 'running' ? '🏃‍♂️' : '🚴‍♀️'} ${workout.description}`
+        `${workout.type === 'Running' ? '🏃‍♂️' : '🚴‍♀️'} ${workout.description}`
       )
       .openPopup();
   }
   _renderWorkout(workout) {
-    console.log(workout.type);
     let html = `<li class="workout workout--${workout.type}" data-id="${
       workout.id
     }">
           <h2 class="workout__title">${workout.description}</h2>
           <div class="workout__details">
             <span class="workout__icon">${
-              workout.type === 'running' ? '🏃‍♂️' : '🚴‍♀️'
+              workout.type === 'Running' ? '🏃‍♂️' : '🚴‍♀️'
             }</span>
             <span class="workout__value">${workout.distance}</span>
             <span class="workout__unit">km</span>
           </div>
           <div class="workout__details">
-            <span class="workout__icon">⏱</span>
-            <span class="workout__value"> ${workout.duration}</span>
+            <span class="workout__icon">⏱ </span>
+            <span class="workout__value">&nbsp;${workout.duration}</span>
             <span class="workout__unit">min</span>
           </div>
           `;
-    console.log(workout.type);
     if (workout.type === 'Running')
       html += `<div class="workout__details">
             <span class="workout__icon">⚡️</span>
@@ -261,12 +255,10 @@ class App {
   }
   _moveToPopup(e) {
     const workoutEl = e.target.closest('.workout');
-    console.log(workoutEl);
     if (!workoutEl) return;
     const workout = this.#workouts.find(
       work => work.id === workoutEl.dataset.id
     );
-    console.log(workout);
     this.#map.setView(workout.coords, this.#mapZoomLevel, {
       animate: true,
       pan: { duration: 1 },
@@ -279,7 +271,6 @@ class App {
 
   _getLocalStorage() {
     const data = JSON.parse(localStorage.getItem('workouts'));
-    console.log(data);
     if (!data) return;
 
     this.#workouts = data;
