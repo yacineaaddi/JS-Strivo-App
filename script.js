@@ -77,7 +77,7 @@ class App {
   #mapZoomLevel = 13;
 
   constructor() {
-    // Get user's position
+    // Get user's current position
     this._getPosition();
     // Get data from local storage
     this._getLocalStorage();
@@ -92,7 +92,7 @@ class App {
       navigator.geolocation.getCurrentPosition(
         this._loadMap.bind(this),
         function () {
-          alert('Could not get your position');
+          alert('Could not get your current position');
         }
       );
   }
@@ -146,7 +146,7 @@ class App {
 
     e.preventDefault();
 
-    // Get data from form
+    // Get data from Form
 
     const type = inputType.value;
     const distance = +inputDistance.value;
@@ -165,7 +165,7 @@ class App {
 
       workout = new Running([lat, lng], distance, duration, cadence);
     }
-    // if workout cycling, create cycling object
+    // If workout cycling, create cycling object
     if (type === 'cycling') {
       const elevation = +inputElevation.value;
       if (
@@ -182,9 +182,9 @@ class App {
     this._renderWorkoutMarker(workout);
     // Render workout on list
     this._renderWorkout(workout);
-    // Hide form + clear input fields
+    // Hide Form + Clear input fields
     this._hideForm();
-    // Set local storage to all workout
+    // Set local storage to all workouts
     this._setLocalStorage();
   }
 
