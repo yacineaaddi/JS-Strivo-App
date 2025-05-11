@@ -4,7 +4,7 @@ A simple tracking app built with HTML, CSS, and JavaScript that tracks your work
 
 ## Demo
 
-If applicable, provide a live demo link here.
+
 
 ## Features
 
@@ -74,6 +74,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - [your-email@example.com](mailto:your-email@example.com)
+My Name - [yacineaaddi@gmail.com](yacineaaddi@gmail.com)
 
-Project Link: [https://github.com/your-username/project-name](https://github.com/your-username/project-name)
+Project Link: [https://github.com/yacineaaddi/JS-Strivo-App](https://github.com/yacineaaddi/JS-Strivo-App)
