@@ -8,11 +8,11 @@ A simple tracking app built with HTML, CSS, and JavaScript that tracks your work
 
 ## Features
 
-- Workout Tracking: Allows users to log workouts with details such as distance, duration, cadence, and elevation gain.
+- Workout Tracking : Allows users to log workouts with details such as distance, duration, cadence, and elevation gain.
 
-- Interactive Map: Integrates a map interface to visualize workout routes.
+- Interactive Map : Integrates a map interface to visualize workout routes.
 
-- User Interface: Provides a user-friendly interface for inputting and viewing workout data.
+- User Interface : Provides a user-friendly interface for inputting and viewing workout data.
 
 ## Installation
 
@@ -42,13 +42,13 @@ A simple tracking app built with HTML, CSS, and JavaScript that tracks your work
 
 ## Technologies Used
 
-- HTML: Structures the content of the web application.
+- HTML : Structures the content of the web application.
 
 - CSS: Styles the application for an appealing user interface.
 
-- JavaScript: Implements the core functionality, including workout tracking and map interactions.
+- JavaScript : Implements the core functionality, including workout tracking and map interactions.
 
-- Leaflet.js: A JavaScript library for interactive maps, used to display workout routes.
+- Leaflet.js : A JavaScript library for interactive maps, used to display workout routes.
 
 ## Folder Structure
 
@@ -74,6 +74,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-My Name - [yacineaaddi@gmail.com](yacineaaddi@gmail.com)
+My Email - [yacineaaddi@gmail.com](yacineaaddi@gmail.com)
 
 Project Link: [https://github.com/yacineaaddi/JS-Strivo-App](https://github.com/yacineaaddi/JS-Strivo-App)
