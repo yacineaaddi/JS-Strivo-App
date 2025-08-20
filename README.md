@@ -1,12 +1,12 @@
-# Project Title
+# 📦 Strivo App
 
 A simple tracking app built with HTML, CSS, and JavaScript that tracks your workouts on an interactive map, recording key metrics like distance, duration, cadence, and elevation gain
 
-## Demo
+## 🔗 Demo
 
+_A live demo link will be added here soon._
 
-
-## Features
+## ✨ Features
 
 - Workout Tracking : Allows users to log workouts with details such as distance, duration, cadence, and elevation gain.
 
@@ -14,7 +14,7 @@ A simple tracking app built with HTML, CSS, and JavaScript that tracks your work
 
 - User Interface : Provides a user-friendly interface for inputting and viewing workout data.
 
-## Installation
+## ⚙️ Installation
 
 1. Clone the repository:
 
@@ -40,39 +40,38 @@ A simple tracking app built with HTML, CSS, and JavaScript that tracks your work
    npm run dev
    ```
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-- HTML : Structures the content of the web application.
+- 💻 HTML : Structures the content of the web application.
 
-- CSS: Styles the application for an appealing user interface.
+- 🎨 CSS: Styles the application for an appealing user interface.
 
-- JavaScript : Implements the core functionality, including workout tracking and map interactions.
+- ⚙️ JavaScript : Implements the core functionality, including workout tracking and map interactions.
 
-- Leaflet.js : A JavaScript library for interactive maps, used to display workout routes.
+- 🌿 Leaflet.js : A JavaScript library for interactive maps, used to display workout routes.
 
-## Folder Structure
+## 📁 Folder Structure
 
 ```
-project-name/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── assets/
-│   └── App.js
-├── public/
-├── package.json
+STRIVO/
+├── favicon/
+├── index.html
+├── LICENSE
+├── logo.png
+├── script.js
+├── style.css
 └── README.md
 ```
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are always welcome! Feel free to submit a Pull Request.
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
+## 📬 Contact
 
 My Email - [yacineaaddi@gmail.com](yacineaaddi@gmail.com)
 
