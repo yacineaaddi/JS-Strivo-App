@@ -5,6 +5,7 @@ A simple tracking app built with HTML, CSS, and JavaScript that tracks your work
 ## 🔗 Demo
 
 _A live demo link will be added here soon._
+www.strivoappproject.com
 
 ## ✨ Features
 
